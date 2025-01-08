@@ -47,7 +47,7 @@ void sendSMS() {
   delay(100);
   gsm.println("AT+CMGS=\"+1234567890\"");  // replace with the emergency number
   delay(100);
-  gsm.println("Suffocation warning! Please check the vehicle immediately.");
+  gsm.println("Alert: Potential suffocation risk detected. Check vehicle immediately!");
   delay(100);
   gsm.write(26);  // send the sms
 }
