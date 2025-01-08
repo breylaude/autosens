@@ -45,7 +45,7 @@ void triggerAlarm() {
 void sendSMS() {
   gsm.println("AT+CMGF=1");   // set sms mode
   delay(100);
-  gsm.println("AT+CMGS=\"+1234567890\"");  // replace with the emergency number
+  gsm.println("AT+CMGS=\"+639365671353\"");  // replace with the emergency number
   delay(100);
   gsm.println("Alert: Potential suffocation risk detected. Check vehicle immediately!");
   delay(100);
